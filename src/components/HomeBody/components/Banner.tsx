@@ -40,7 +40,7 @@ export default function Banner(props: Props) {
         >
           {pageUtil.isUserSpace ? session.data?.user.name : WEBSITE_NAME}
         </GradientText>
-        <div className="text-foreground-800">收纳、分享、探索优质网站</div>
+        <div className="text-foreground-800">全干工程师的宝藏收藏</div>
         <div className="text-sm text-foreground-500">
           已收录 {totalBookmarks} 个书签，共 {tags.length} 个标签
         </div>
