@@ -1,14 +1,12 @@
 import Favicon from '@/components/Favicon'
-import { SelectPublicBookmark } from '@/controllers/PublicBookmark.controller'
-import { SelectPublicTag } from '@/controllers/PublicTag.controller'
 import { useOnClickTag } from '@/hooks/useOnClickTag'
 import { getTagLinkAttrs } from '@/utils'
 import { Chip, cn } from '@heroui/react'
 import { useHomePageContext } from '../ctx'
 
-interface Props extends SelectPublicBookmark {
+interface Props extends SelectBookmark {
   editable?: boolean
-  allTags?: SelectPublicTag[]
+  allTags?: SelectTag[]
   onRemove?: () => void
   onEdit?: () => void
 }
